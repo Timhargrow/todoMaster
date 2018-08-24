@@ -4,7 +4,7 @@ import {createStackNavigator, createBottomTabNavigator} from 'react-navigation';
 
 import HomeScreen from '../Home/HomeScreen';
 
-class TitleScreen extends Component{
+export default class TitleScreen extends Component{
     static navigationOptions = {
         headr: null
     }
@@ -48,7 +48,7 @@ class TitleScreen extends Component{
                     flexBasis: 20,
                     color: 'black',
                   }}
-                  title="TDO"
+                  title="TODO"
                 vertical
                 block={true}
                 onPress={() => this.props.navigation.navigate('HomeScreen')}
@@ -132,4 +132,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TitleScreen;
+

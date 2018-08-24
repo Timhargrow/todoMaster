@@ -28,7 +28,6 @@ extends Component{
             }}
             >
             <ScrollView contentContainerStyle={styles.contentContainer}>
-          
             <Button
             style={{
               flex: -1,
@@ -59,7 +58,7 @@ extends Component{
            <Text
            
             >
-               CREATE3!!!
+               CREATE
            </Text>
             </Button>
 
@@ -89,7 +88,6 @@ extends Component{
             >
             <Text>
             Notes 
-            Screen
             </Text>
             </Button>
             

@@ -1,26 +1,13 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+// import CreateNew from '../CreateEdit/CreateNew';
+
 
 export default class NotesScreen extends Component{
   render() {
+    
     return (
-      <View style={{
-        flex:1, 
-        flexDirection: 'column',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        alignContent: 'center',
-        alignItems: 'center',
-        borderColor: "transparent",
-        backgroundColor: "#89cff0",
-        borderWidth: 3,
-
-      }}>
-        <Text>
-        NotesScreen
-        </Text>
-        
-      </View>
+<View></View>
     );
   }
 }

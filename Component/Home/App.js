@@ -10,7 +10,8 @@ import NotesScreen from './Component/Notes/NotesScreen';
 import Alarm from './Component/Alarm/Alarm';
 import SettingsScreen from './Component/Settings/SettingsScreen';
 import CreateScreenNavigator from './Component/AdditionalNavigators/CreateScreenNavigator';
-// import Create2 from './Component/CreateEdit/Create2';
+import { Icon } from 'native-base';
+
 
 export default class App extends Component{  
 
@@ -23,16 +24,11 @@ export default class App extends Component{
   }
 }
 
-const FinalAppNav = ({
-  TitleScreen: {
-    screen: TitleScreen
-  },
-  initialRouteName: 'TitleScreen'
-})
+
 
 const AppNav = createStackNavigator({
   TitleScreen: {
-    screen: TitleScreen,
+    screen: TitleScreen
   },
   HomeScreen: {
     screen: HomeScreen
@@ -40,9 +36,6 @@ const AppNav = createStackNavigator({
   Create: {
     screen: Create
   },
-  // Create2: {
-  //   screen: Create2
-  // },
   Edit: {
     screen: Edit
   },
@@ -60,10 +53,10 @@ const AppNav = createStackNavigator({
   });
 
   class AppNavActivate extends Component {
-   constructor(props){
-     super(props);
-     state = '';
-   }
+  //  constructor(props){
+  //    super(props);
+  //    state = '';
+  //  }
     render(){
       return(
         <AppNav navigation = {this.props.navigation} />
@@ -78,12 +71,6 @@ const AppNav = createStackNavigator({
     HomeScreen: {
       screen: HomeScreen
     },
-    Create: {
-      screen: Create
-    },
-    // Create2: {
-    //   screen: Create2
-    // },
     NotesScreen: {
         screen: NotesScreen
     },
